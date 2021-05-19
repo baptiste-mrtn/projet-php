@@ -5,6 +5,6 @@
     <title>test</title>
   </head>
   <body>
-
+  <?php include('item.php') ; ?>
   </body>
 </html>
