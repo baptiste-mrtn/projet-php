@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(34, 33, 33);
+}
+
+#test_police {
+  text-align: center;
+}
+
+.souligner {
+  color: white;
+}
+
+#centrage_annuel {
+  text-align: center;
+}
+
+#centrage_lifetime {
+  text-align: center;
+}
+
+#centrage_mensuel {
+  text-align: center;
+}

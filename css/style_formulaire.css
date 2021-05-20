@@ -1,0 +1,227 @@
+/*Début CSS Bandeau*/
+
+.dropdown-menu {
+  background-color: #212529;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+/*Fin CSS Bandeau*/
+
+/*Début CSS Formulaire*/
+
+body {
+  background-color: black;
+}
+
+#bottom {
+  color: white;
+  background-color: #a10c0c;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 40%;
+}
+
+@media (max-width: 576px) {
+  #bottom {
+    font-size: 20px;
+    width: 100%;
+  }
+}
+
+#intro {
+  color: white;
+  margin-top: 15px;
+}
+
+.ligne1 {
+font-weight: bolder;
+font-size: 30px;
+}
+
+.ligne2 {
+  font-size: 20px;
+  font-style: italic;
+}
+
+@media (max-width:576px) {
+  .ligne1 {
+    font-size:20px;
+  }
+  .ligne2 {
+    font-size: 15px;
+  }
+}
+
+
+.titre-f {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+  padding: 15px;
+  background-color: rgb(161, 12, 12);
+  border-radius: 5%;
+  margin-top: 8px;
+}
+
+.entendre {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+}
+
+.dispo {
+  text-align: center;
+  color: white;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.f-contact{
+  width: 95%;
+}
+
+@media (max-width: 576px) {
+  form {
+    width: 100%;
+  }
+}
+
+#contenu {
+  color: white;
+  background-color: #a10c0c;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 45px;
+  border-radius: 15%;
+  font-weight: bolder;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+  #contenu {
+    width: 80%;
+  }
+}
+
+@media (max-width: 700px) {
+  #contenu {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  #contenu {
+    width: 100%;
+  }
+}
+
+#btn-e {
+  background-color: #a10c0c;
+  color: white;
+  font-weight: bolder;
+  border: 2px solid white;
+  padding: 10px 20px 10px 20px;
+  font-size: 25px;
+
+}
+#btn-e:hover {
+  background-color: white;
+  color: #a10c0c;
+}
+
+@media (max-width:576px) {
+  .btn {
+    font-size: 20px;
+    padding: 10px 12px 10px 12px;
+  }
+}
+  
+
+.envoyer {
+  text-align: center;
+}
+
+/*Fin CSS Formulaire*/
+
+/*Début CSS Footer*/
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+
+footer {
+  flex-direction: column;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  width: 100%;
+  flex-wrap: wrap;
+
+}
+
+#footerfaq{color: white;
+  text-decoration:#212529;
+}
+
+#footercontact{color: white;
+  text-decoration:#212529;
+}
+
+.texte {
+  text-align: center;
+
+  background-color: #212529;
+}
+
+
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.reseau {
+  padding-top: 29px;
+}
+
+.campus {
+  width: 50px;
+  padding-top: 22px;
+}
+
+
+@media screen and (max-width:640px) {
+  .campus {
+      max-width: 100% !important;
+      width: 75%;
+  }
+}
+
+footer .row {
+  background-color: #212529;
+
+}
+
+#reseaux {
+  background-color: #384047;
+
+}
+/*Fin CSS Footer*/

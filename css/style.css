@@ -1,0 +1,725 @@
+body{
+    background: rgb(34, 33, 33);
+
+  
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+/*CECI EST LE DEBUT CSS DU BANDEAU*/
+
+.dropdown-menu {
+  background-color: #212529;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+/*CECI EST LA FIN DU CSS DU BANDEAU2*/
+
+footer {
+  flex-direction: column;
+  margin: 0 auto;
+  color: rgb(63, 62, 62);
+  background-color: #212529;
+  text-align: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+
+
+
+h1{
+    text-align: center;
+    font-size: 90px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(240, 10, 10);
+
+    
+
+}
+
+h2{
+    text-align: center;
+    font-size: 60px;
+    
+    color: rgb(233, 2, 2);
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h3{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(243, 12, 12);
+}
+
+h4{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(236, 11, 11);
+
+}
+
+h5{
+    text-align: center;
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    flex-basis: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(240, 14, 14);
+    
+
+}
+.w1-container{
+    
+    text-align: center;
+    color: rgb(228, 10, 10);
+    
+}
+
+.w2-container{
+    color: rgb(240, 16, 16);
+    font-family: 'Roboto', sans-serif;
+    flex-wrap: wrap;
+    max-width: 700px;
+    margin: auto;
+
+    
+        
+      
+
+}
+
+.w5-container{
+    text-align: center;
+    
+}
+
+.w3-container{
+    text-align: center;
+
+}
+
+.w4-container{
+    text-align: center;
+}
+
+.w6-container{
+    display: flex;
+    justify-content: space-around;
+    max-width: 700px;
+    margin: auto;
+    color: rgb(235, 16, 16);
+    
+
+}
+
+.w6-container div{
+    text-align: center;
+    
+    background-color:rgba(0, 0, 0, 1);
+	width:536px;
+	height:200px;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+    
+    
+    
+    
+    
+}
+
+.image1{
+    position: relative;
+    
+    right: 17%;
+    margin-top: 2%;
+    
+}
+
+.w2-container{
+    display: flex;
+    
+
+}
+
+.w2-container div{
+    
+    padding: 10px;
+    width: 300px;
+    height: 140px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 15px;
+
+
+}
+
+
+.x1-container{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.x1-container div{
+    text-align: center;
+    padding: 2px;
+    width: 150px;
+    height: 90px;
+    background-color: rgb(248, 4, 4);
+    border-radius: 10%;
+    
+
+}
+
+.align_right{
+    text-align: right;
+    
+}
+
+.coucou{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.walah{
+    text-align: left;
+    color: white; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    
+}
+
+.bogoss{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+
+}
+
+/*début css footer*/
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+
+footer {
+  flex-direction: column;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  width: 100%;
+  flex-wrap: wrap;
+
+}
+
+.card-header {
+  text-align: center;
+  background-color: #212529;
+  color: white;
+}
+
+.texte {
+  text-align: center;
+
+  background-color: #212529;
+}
+
+.card {
+  border: none;
+  background-color: #212529;
+
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.reseau {
+  padding-top: 29px;
+}
+
+.campus {
+  width: 50px;
+  padding-top: 22px;
+}
+
+
+@media screen and (max-width:640px) {
+  .campus {
+      max-width: 100% !important;
+      width: 75%;
+  }
+}
+
+footer .row {
+  background-color: #212529;
+
+}
+
+#reseaux {
+  background-color: #384047;
+
+}
+
+/*FIN FOOTER
+
+
+@media screen and (max-width:640px) {
+  .campus {
+      max-width: 100% !important;
+      width: 75%;
+  }
+}
+  /*CECI EST LE CSS DU BANDEAU*/
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .main-nav div:not(:first-child) {
+    
+    display: flex;
+    width: 150px;
+    line-height: 80px;
+    vertical-align: middle;
+    background-color: black;
+    background: url(photo/boutonnoir.png) no-repeat;
+    color: white;
+    text-decoration: none;
+    float: left;
+    background-position-y: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .main-nav div:not(:first-child):hover {
+    background: url(photo/boutonnoir2.png) no-repeat;
+    background-position-y: center;
+  }
+  
+  span {
+    color: white;
+    text-align: center;
+    text-decoration:underline black;
+  }
+  
+  /*CECI EST LA FIN DU CSS DU BANDEAU*/
+
+  /*Début CSS pour la page team*/
+
+/*début test media qwery sur body*/
+
+body {
+    background: rgb(255, 255, 255);
+    margin: 0%;
+  }
+  
+  @media (max-width: 600px) {
+    body {
+      background: pink;
+      font-size: 15px;
+    }
+  }
+  
+  /*fin test media qwery sur body*/
+  
+  /*début test media qwery sur container*/
+  
+  .container-t {
+    display: flex;
+    flex-direction: row;
+    margin-top: -5px;
+    margin-bottom: -1px;
+    flex-wrap: wrap;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    .container-t {
+      background: pink;
+      font-size: 2px;
+    }
+  }
+  
+  /*fin test media qwery sur container*/
+  
+  .container-t div {
+    padding: 30px 20px 30px 20px;
+    margin-top: -10px;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .presentation {
+    background: #3d3b3b;
+    border-radius: 10%;
+    padding: 20px 30px 20px 30px;
+    font-size: 15px;
+    border-left: red solid 4px;
+  }
+  
+  @media (max-width: 800px) {
+      .presentation {
+        font-size: 12px;
+      }
+    }
+  
+  .nom {
+    font-size: 30px;
+    color: white;
+    font-weight: bolder;
+    text-decoration: underline;
+  }
+  
+  .nom:hover {
+    filter: drop-shadow(5px 5px 3px rgb(255, 0, 0));
+  }
+  
+  @media (max-width: 600px) {
+      .nom {
+        font-size: 20px;
+      }
+    }
+  
+  .metier {
+    color: white;
+    font-style: italic;
+    text-decoration: underline rgb(34, 33, 33);
+    font-size: 20px;
+  }
+  
+  @media (max-width: 600px) {
+      .metier {
+        font-size: 15px;
+      }
+    }
+  .description {
+    color: white;
+    font-style: italic;
+    text-decoration: underline rgb(34, 33, 33);
+    font-size: 15px;
+  }
+  
+  .infos {
+    text-align: center;
+  }
+  
+  img.displayed-p {
+    display: block;
+    margin-left: -10px;
+    margin-right: auto;
+    border-radius: 100px;
+    border-left: red solid 4px;
+    height: 200px;
+    width: 200px
+  }
+  
+  @media (max-width: 600px) {
+      .img.displayed-p {
+          height: 50px;
+          width: 50px;
+      }
+    }
+  
+  img.displayed-p:hover {
+    display: block;
+    margin-left: -10px;
+    margin-right: auto;
+    filter: drop-shadow(10px 10px 15px rgb(255, 0, 0));
+  }
+  
+  
+  
+  /*Fin CSS pour la page team*/
+  
+  /*CECI EST LE CSS DU BANDEAU*/
+  .main-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    
+    .main-nav div:not(:first-child) {
+      
+      display: flex;
+      width: 150px;
+      line-height: 80px;
+      vertical-align: middle;
+      background-color: black;
+      background: url(photo/boutonnoir.png) no-repeat;
+      color: white;
+      text-decoration: none;
+      float: left;
+      background-position-y: center;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .main-nav div:not(:first-child):hover {
+      background: url(photo/boutonnoir2.png) no-repeat;
+      background-position-y: center;
+    }
+    
+    span {
+      color: white;
+      text-align: center;
+      text-decoration:underline black;
+    }
+  
+  /*CECI EST LA FIN DU CSS DU BANDEAU*/
+  
+ 
+
+    .rawer{
+      text-align: center;
+      
+    }
+
+    .catak{
+     text-align: center;
+
+    }
+
+    h40{
+      color: rgb(0, 0, 0);
+    
+    text-decoration: underline rgb(34, 33, 33);
+    font-size: 60px;
+    }
+
+
+    h6{
+      text-align: center;
+      text-decoration:underline black;
+      
+
+      }
+
+      .capture{
+        text-align: center;
+        max-width: 100%;
+      }
+
+      .tableaux_forfait{
+        table-layout: fixed;
+        width: 100%;
+        border-collapse: collapse;
+        border: 2px solid rgb(0, 0, 0);
+        text-align: center;
+        
+        
+      }
+      
+      thead th:nth-child(1) {
+        width: 30%;
+      }
+      
+      thead th:nth-child(2) {
+        width: 20%;
+      }
+      
+      thead th:nth-child(3) {
+        width: 15%;
+      }
+      
+      thead th:nth-child(4) {
+        width: 35%;
+      }
+      
+      th, td {
+        padding: 20px;
+      }
+      
+      .paragraphe_centre {
+        text-align: left;
+        margin-left: 10%;
+    }
+
+
+
+  /*début css footer*/
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+
+footer {
+    flex-direction: column;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+#footerfaq{color: white;
+    text-decoration:#212529;
+}
+
+#footercontact{color: white;
+    text-decoration:#212529;
+}
+
+.texte {
+    text-align: center;
+
+    background-color: #212529;
+}
+
+
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.reseau {
+    padding-top: 29px;
+}
+
+.campus {
+    width: 50px;
+    padding-top: 22px;
+}
+
+
+@media screen and (max-width:640px) {
+    .campus {
+        max-width: 100% !important;
+        width: 75%;
+    }
+}
+
+footer .row {
+    background-color: #212529;
+
+}
+
+#reseaux {
+    background-color: #384047;
+
+}
+   
+    
+  /*fin css footer*/
+
+  .paragraphe_centre {
+    text-align: left;
+    margin-left: 10%;
+}
+
+#contenair-catalogue {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.titre_catalogue {
+    text-align: center;
+    color: black;
+}
+
+
+#coucoubogosse{
+  justify-content: center;
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+  
+}
+#coucoubogosse2{
+  justify-content: center;
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+  
+}
+#coucoubogosse1{
+  justify-content: center;
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+  
+}
+
+h2{
+  color: white;
+}
+
+body{
+  background: rgb(34, 33, 33);
+  color:white
+
+}
+
+@media (max-width: 476px) {
+
+  #piraterie,
+  #clochard,
+  #molusque,
+  #dentiste,
+  #jul,
+  #jordan1,
+  #mocha,
+  #royal,
+  #nikel,
+  #adadas,
+  #offw{
+  
+ 
+    font-size: large;
+
+
+
+  }
+}
+
+#clochard{
+
+  color: aqua;
+font-size: 80px;
+}
+#piraterie{
+
+  color: red;
+ 
+}

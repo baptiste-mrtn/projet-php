@@ -1,0 +1,32 @@
+body {
+    background-color:rgb(34, 33, 33);
+    color: white;
+}
+
+.photo_robin {
+    border-radius: 100%;
+    border: 1px solid red;
+}
+
+#container_cv {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.nom_cv {
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.titre_colonne {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.col-lg-3 {
+    border-left: 3px solid red;
+}
+
+.col-sm-6 {
+    border-left: 3px solid red;
+}

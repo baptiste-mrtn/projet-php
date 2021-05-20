@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+
+footer {
+    flex-direction: column;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+#footerfaq {
+    color: white;
+    text-decoration: #212529;
+}
+
+#footercontact {
+    color: white;
+    text-decoration: #212529;
+}
+
+.texte {
+    text-align: center;
+
+    background-color: #212529;
+}
+
+
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.reseau {
+    padding-top: 29px;
+}
+
+.campus {
+    width: 50px;
+    padding-top: 22px;
+}
+
+
+@media screen and (max-width:640px) {
+    .campus {
+        max-width: 100% !important;
+        width: 75%;
+    }
+}
+
+footer .row {
+    background-color: #212529;
+
+}
+
+#reseaux {
+    background-color: #384047;
+
+}
