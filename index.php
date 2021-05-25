@@ -4,6 +4,10 @@ include ('header.php');
     <body>
 
       <?php
+      include ('simple-catalog.php');
+      ?>
+
+      <?php
       include ('multidimensional-catalog.php');
       ?>
 
