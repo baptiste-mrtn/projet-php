@@ -2,7 +2,7 @@
 
 $shoes = [
   "name" => "Adidas Rainbow",
-  "price" => 200,
+  "price" => 20000,
   "weight" => 500,
   "discount" => 20,
   "picture" => "img/shoes/paire9.jpg",

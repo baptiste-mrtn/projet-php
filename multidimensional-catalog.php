@@ -3,7 +3,7 @@
 $products = [
   "Adidas Rainbow" => [
     "name" => "Adidas Rainbow",
-    "price" => 200,
+    "price" => 20000,
     "weight" => 500,
     "discount" => 20,
     "picture" => "img/shoes/paire9.jpg",
@@ -11,7 +11,7 @@ $products = [
 
   "Adidas Blue" => [
     "name" => "Adidas Blue",
-    "price" => 499,
+    "price" => 49900,
     "weight" => 260,
     "discount" => 5,
     "picture" => "img/shoes/paire8.jpg",
@@ -19,7 +19,7 @@ $products = [
 
   "Adidas Black & Red" => [
     "name" => "Adidas Black & Red",
-    "price" => 250,
+    "price" => 25000,
     "weight" => 520,
     "discount" => 10,
     "picture" => "img/shoes/paire4.jpg",
