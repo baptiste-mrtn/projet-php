@@ -26,8 +26,11 @@ require_once ('my-functions.php');
 
                 if ($i === 1) {
                     echo "<li class='list-group-item'>";
-                    echo "$keys[$i] : ";
+                    echo "$keys[$i] TTC : ";
                     formatPrice($value[$i]);
+                    echo "€";
+                    echo " | HT : ";
+                    formatPrice(priceExcludingVAT($value[$i]));
                     echo " €<br>";
                     echo "</li>";
                 }

@@ -4,4 +4,10 @@ function formatPrice($value){
     echo "$euros";
 }
 
+function priceExcludingVAT($euros){
+    $priceHT = $euros/(1+20/100);
+    return $priceHT;
+}
+
+
 ?>

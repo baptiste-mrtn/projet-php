@@ -146,8 +146,11 @@ $products = [
 
           else if ($ii === 1) {
               echo "<li class='list-group-item'>";
-              echo "$keys_value[$ii] : ";
+              echo "$keys_value[$ii] TTC : ";
               formatPrice($value[$ii]);
+              echo "€";
+              echo " | HT : ";
+              formatPrice(priceExcludingVAT($value[$ii]));
               echo " €<br>";
               echo "</li>";
               $ii = $ii +1;
@@ -188,8 +191,11 @@ $products = [
 
                     else if ($ii === 1) {
                         echo "<li class='list-group-item'>";
-                        echo "$keys_value[$ii] : ";
+                        echo "$keys_value[$ii] TTC : ";
                         formatPrice($value[$ii]);
+                        echo "€";
+                        echo " | HT : ";
+                        formatPrice(priceExcludingVAT($value[$ii]));
                         echo " €<br>";
                         echo "</li>";
                         $ii = $ii +1;
@@ -227,8 +233,11 @@ $products = [
 
                 else if ($ii === 1) {
                     echo "<li class='list-group-item'>";
-                    echo "$keys_value[$ii] : ";
+                    echo "$keys_value[$ii] TTC : ";
                     formatPrice($value[$ii]);
+                    echo "€";
+                    echo " | HT : ";
+                    formatPrice(priceExcludingVAT($value[$ii]));
                     echo " €<br>";
                     echo "</li>";
                     $ii = $ii +1;
@@ -267,8 +276,11 @@ $products = [
 
                 else if ($ii === 1) {
                     echo "<li class='list-group-item'>";
-                    echo "$keys_value[$ii] : ";
+                    echo "$keys_value[$ii] TTC : ";
                     formatPrice($value[$ii]);
+                    echo "€";
+                    echo " | HT : ";
+                    formatPrice(priceExcludingVAT($value[$ii]));
                     echo " €<br>";
                     echo "</li>";
                     $ii = $ii +1;
