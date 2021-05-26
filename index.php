@@ -8,6 +8,10 @@ include ('header.php');
       ?>
 
       <?php
+      include ('key-catalog.php');
+      ?>
+
+      <?php
       include ('multidimensional-catalog.php');
       ?>
 

@@ -26,6 +26,8 @@ $products = [
   ]
   ];
 
+  require_once ('my-functions.php');
+
 ?>
 
 <html>
@@ -140,7 +142,18 @@ $products = [
             echo "$keys_value[$ii] : <img src='$value[$ii]' alt='image baskettes'><br>";
             echo "</li>";
             $ii = $ii +1;
-          } else {
+          }
+
+          else if ($ii === 1) {
+              echo "<li class='list-group-item'>";
+              echo "$keys_value[$ii] : ";
+              formatPrice($value[$ii]);
+              echo " €<br>";
+              echo "</li>";
+              $ii = $ii +1;
+          }
+
+          else {
             echo "<li class='list-group-item'>";
             echo "$keys_value[$ii] : $value[$ii]<br>";
             echo "</li>";
@@ -171,7 +184,18 @@ $products = [
                       echo "$keys_value[$ii] : <img src='$value[$ii]' alt='image baskettes'><br>";
                       echo "</li>";
                       $ii = $ii +1;
-                    } else {
+                    }
+
+                    else if ($ii === 1) {
+                        echo "<li class='list-group-item'>";
+                        echo "$keys_value[$ii] : ";
+                        formatPrice($value[$ii]);
+                        echo " €<br>";
+                        echo "</li>";
+                        $ii = $ii +1;
+                    }
+
+                    else {
                       echo "<li class='list-group-item'>";
                       echo "$keys_value[$ii] : $value[$ii]<br>";
                       echo "</li>";
@@ -199,7 +223,18 @@ $products = [
                   echo "<li class='list-group-item'>";
                   echo "$keys_value[$ii] : <img src='$value[$ii]' alt='image baskettes'><br>";
                   echo "</li>";
-                } else {
+                }
+
+                else if ($ii === 1) {
+                    echo "<li class='list-group-item'>";
+                    echo "$keys_value[$ii] : ";
+                    formatPrice($value[$ii]);
+                    echo " €<br>";
+                    echo "</li>";
+                    $ii = $ii +1;
+                }
+
+                else {
                   echo "<li class='list-group-item'>";
                   echo "$keys_value[$ii] : $value[$ii]<br>";
                   echo "</li>";
@@ -228,7 +263,18 @@ $products = [
                   echo "$keys_value[$ii] : <img src='$value[$ii]' alt='image baskettes'><br>";
                   echo "</li>";
                   $ii = $ii +1;
-                } else {
+                }
+
+                else if ($ii === 1) {
+                    echo "<li class='list-group-item'>";
+                    echo "$keys_value[$ii] : ";
+                    formatPrice($value[$ii]);
+                    echo " €<br>";
+                    echo "</li>";
+                    $ii = $ii +1;
+                }
+
+                else {
                   echo "<li class='list-group-item'>";
                   echo "$keys_value[$ii] : $value[$ii]<br>";
                   echo "</li>";

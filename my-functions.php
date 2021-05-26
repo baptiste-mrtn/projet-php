@@ -1,15 +1,7 @@
 <?php
-include ('key-catalog.php');
-include ('multidimensional-catalog.php');
-function formatPrice($products[$i]){
-
-
+function formatPrice($value){
+    $euros = $value / 100;
     echo "$euros";
 }
-
-
-
-
-
 
 ?>
