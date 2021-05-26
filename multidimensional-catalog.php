@@ -131,17 +131,31 @@ $products = [
       <?php
       $i = 0;
       $keys = array_keys($products);
+
       while($i < count($products)){
         $ii = 0;
         echo "$keys[$i] : <br>";
         $keys_value = array_keys($products[$keys[$i]]);
         $value = array_values($products[$keys[$i]]);
+        $purcent = $value[3];
+
         while ($ii < count($keys_value)) {
+
           if ($ii === 4) {
             echo "<li class='list-group-item'>";
             echo "$keys_value[$ii] : <img src='$value[$ii]' alt='image baskettes'><br>";
             echo "</li>";
             $ii = $ii +1;
+          }
+
+          else if ($ii === 3) {
+              echo "<li class='list-group-item'>";
+              echo "$keys_value[$ii] : -$value[$ii]%";
+              echo " -> ";
+              formatPrice(displayDiscountedPrice($value[$ii-2], $value[$ii]));
+              echo " €<br>";
+              echo "</li>";
+              $ii = $ii +1;
           }
 
           else if ($ii === 1) {
@@ -176,17 +190,30 @@ $products = [
         <?php
         $i = 0;
         $keys = array_keys($products);
+
             do {
                 $ii = 0;
                 echo "$keys[$i] : <br>";
                 $keys_value = array_keys($products[$keys[$i]]);
                 $value = array_values($products[$keys[$i]]);
+                $purcent = $value[3];
+
                 do {
                     if ($ii === 4) {
                       echo "<li class='list-group-item'>";
                       echo "$keys_value[$ii] : <img src='$value[$ii]' alt='image baskettes'><br>";
                       echo "</li>";
                       $ii = $ii +1;
+                    }
+
+                    else if ($ii === 3) {
+                        echo "<li class='list-group-item'>";
+                        echo "$keys_value[$ii] : -$value[$ii]%";
+                        echo " -> ";
+                        formatPrice(displayDiscountedPrice($value[$ii-2], $value[$ii]));
+                        echo " €<br>";
+                        echo "</li>";
+                        $ii = $ii +1;
                     }
 
                     else if ($ii === 1) {
@@ -220,15 +247,28 @@ $products = [
     <ul class='row col-4 list-group list-group-flush mx-auto mb-4 border bg-white text-center'>
         <?php
         $keys = array_keys($products);
+
         for ($i=0; $i < count($products) ; $i++) {
             echo "$keys[$i] : <br>";
             $keys_value = array_keys($products[$keys[$i]]);
             $value = array_values($products[$keys[$i]]);
+            $purcent = $value[3];
+
             for ($ii=0; $ii < count($keys_value) ; $ii++) {
+
                 if ($ii === 4) {
                   echo "<li class='list-group-item'>";
                   echo "$keys_value[$ii] : <img src='$value[$ii]' alt='image baskettes'><br>";
                   echo "</li>";
+                }
+
+                else if ($ii === 3) {
+                    echo "<li class='list-group-item'>";
+                    echo "$keys_value[$ii] : -$value[$ii]%";
+                    echo " -> ";
+                    formatPrice(displayDiscountedPrice($value[$ii-2], $value[$ii]));
+                    echo " €<br>";
+                    echo "</li>";
                 }
 
                 else if ($ii === 1) {
@@ -240,7 +280,6 @@ $products = [
                     formatPrice(priceExcludingVAT($value[$ii]));
                     echo " €<br>";
                     echo "</li>";
-                    $ii = $ii +1;
                 }
 
                 else {
@@ -261,17 +300,31 @@ $products = [
     <?php
         $i = 0;
         $keys = array_keys($products);
+
         foreach($products as $products[$i]){
             $ii = 0;
             echo "$keys[$i] : <br>";
             $keys_value = array_keys($products[$keys[$i]]);
             $value = array_values($products[$keys[$i]]);
+            $purcent = $value[3];
+
             foreach ($keys_value as $keys_value[$ii]) {
+
                 if ($ii === 4) {
                   echo "<li class='list-group-item'>";
                   echo "$keys_value[$ii] : <img src='$value[$ii]' alt='image baskettes'><br>";
                   echo "</li>";
                   $ii = $ii +1;
+                }
+
+                else if ($ii === 3) {
+                    echo "<li class='list-group-item'>";
+                    echo "$keys_value[$ii] : -$value[$ii]%";
+                    echo " -> ";
+                    formatPrice(displayDiscountedPrice($value[$ii-2], $value[$ii]));
+                    echo " €<br>";
+                    echo "</li>";
+                    $ii = $ii +1;
                 }
 
                 else if ($ii === 1) {

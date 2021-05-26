@@ -21,7 +21,8 @@ require_once ('my-functions.php');
             $i = 0;
             $keys = array_keys($products);
             $value = array_values($products);
-
+            $purcent = $products[$keys[3]];
+            
             foreach($keys as $keys[$i]){
 
                 if ($i === 1) {
@@ -31,6 +32,15 @@ require_once ('my-functions.php');
                     echo "€";
                     echo " | HT : ";
                     formatPrice(priceExcludingVAT($value[$i]));
+                    echo " €<br>";
+                    echo "</li>";
+                }
+
+                else if ($i === 3) {
+                    echo "<li class='list-group-item'>";
+                    echo "$keys[$i] : -$value[$i]%";
+                    echo " -> ";
+                    formatPrice(displayDiscountedPrice($value[$i-2], $value[$i]));
                     echo " €<br>";
                     echo "</li>";
                 }

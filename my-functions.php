@@ -9,5 +9,12 @@ function priceExcludingVAT($euros){
     return $priceHT;
 }
 
+function displayDiscountedPrice($euros, $purcent) {
+    $remise = $euros*($purcent/100);
+    $remise = $euros-$remise;
+    return $remise;
+}
+
+
 
 ?>
