@@ -35,6 +35,69 @@ $products = [
 
     <h1>Multidimensional Catalog</h1>
 
+    <div class="boucle-foreach">
+      <h2>Boucle Foreach</h2>
+      <ul class='row col-4 list-group list-group-flush mx-auto mb-4 border bg-white text-center'>
+      <?php
+          $i = 0;
+          $keys = array_keys($products);
+
+          foreach($products as $products[$i]){
+              $ii = 0;
+              echo "$keys[$i] : <br>";
+              $keys_value = array_keys($products[$keys[$i]]);
+              $value = array_values($products[$keys[$i]]);
+              $purcent = $value[3];
+
+              foreach ($keys_value as $keys_value[$ii]) {
+
+                  if ($ii === 4) {
+                    echo "<li class='list-group-item'>";
+                    echo "$keys_value[$ii] : <img src='$value[$ii]' alt='image baskettes'><br>";
+                    echo "</li>";
+                    $ii = $ii +1;
+                  }
+
+                  else if ($ii === 3) {
+                      echo "<li class='list-group-item'>";
+                      echo "$keys_value[$ii] : -$value[$ii]%";
+                      echo " -> ";
+                      formatPrice(displayDiscountedPrice($value[$ii-2], $value[$ii]));
+                      echo " €<br>";
+                      echo "</li>";
+                      $ii = $ii +1;
+                  }
+
+                  else if ($ii === 1) {
+                      echo "<li class='list-group-item'>";
+                      echo "$keys_value[$ii] TTC : ";
+                      formatPrice($value[$ii]);
+                      echo "€";
+                      echo " | HT : ";
+                      formatPrice(priceExcludingVAT($value[$ii]));
+                      echo " €<br>";
+                      echo "</li>";
+                      $ii = $ii +1;
+                  }
+
+                  else {
+                    echo "<li class='list-group-item'>";
+                    echo "$keys_value[$ii] : $value[$ii]<br>";
+                    echo "</li>";
+                    $ii = $ii +1;
+              }
+
+          }
+          $i = $i+1;
+          }
+          ?>
+
+          <form class="" action="index.html" method="post">
+
+          </form>
+      </ul>
+    </div>
+
   <!--  <div class="container row mx-auto mt-4 mb-4">
     <ul class="row col-4 list-group list-group-flush mx-auto border bg-white text-center">
       <style>.list-group-item img{width: 200px; height: 200px;}</style>
@@ -123,7 +186,7 @@ $products = [
         <img src="<?php echo ($products["Adidas Black & Red"]["picture"]);?>" alt="Adidas Black & Red">
       </li>
     </ul>
-  </div> -->
+</div>
 
     <div class="boucle-while">
       <h2>Boucle While</h2>
@@ -292,66 +355,7 @@ $products = [
         }
          ?>
     </ul>
-  </div>
-
-  <div class="boucle-foreach">
-    <h2>Boucle Foreach</h2>
-    <ul class='row col-4 list-group list-group-flush mx-auto mb-4 border bg-white text-center'>
-    <?php
-        $i = 0;
-        $keys = array_keys($products);
-
-        foreach($products as $products[$i]){
-            $ii = 0;
-            echo "$keys[$i] : <br>";
-            $keys_value = array_keys($products[$keys[$i]]);
-            $value = array_values($products[$keys[$i]]);
-            $purcent = $value[3];
-
-            foreach ($keys_value as $keys_value[$ii]) {
-
-                if ($ii === 4) {
-                  echo "<li class='list-group-item'>";
-                  echo "$keys_value[$ii] : <img src='$value[$ii]' alt='image baskettes'><br>";
-                  echo "</li>";
-                  $ii = $ii +1;
-                }
-
-                else if ($ii === 3) {
-                    echo "<li class='list-group-item'>";
-                    echo "$keys_value[$ii] : -$value[$ii]%";
-                    echo " -> ";
-                    formatPrice(displayDiscountedPrice($value[$ii-2], $value[$ii]));
-                    echo " €<br>";
-                    echo "</li>";
-                    $ii = $ii +1;
-                }
-
-                else if ($ii === 1) {
-                    echo "<li class='list-group-item'>";
-                    echo "$keys_value[$ii] TTC : ";
-                    formatPrice($value[$ii]);
-                    echo "€";
-                    echo " | HT : ";
-                    formatPrice(priceExcludingVAT($value[$ii]));
-                    echo " €<br>";
-                    echo "</li>";
-                    $ii = $ii +1;
-                }
-
-                else {
-                  echo "<li class='list-group-item'>";
-                  echo "$keys_value[$ii] : $value[$ii]<br>";
-                  echo "</li>";
-                  $ii = $ii +1;
-            }
-
-        }
-        $i = $i+1;
-        }
-        ?>
-    </ul>
-  </div>
+</div> -->
 
   </body>
 </html>
