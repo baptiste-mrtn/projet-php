@@ -1,7 +1,7 @@
 <?php
 include ('header.php');
 ?>
-    <body class="bg-dark">
+    <body>
 
       <?php
       //include ('simple-catalog.php');

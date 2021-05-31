@@ -12,7 +12,9 @@
       <title>SILENT</title>
     </head>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body class="bg-dark">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="https://www.youtube.com/watch?v=ZyhrYis509A"><img src="img/logo silent.jpg" alt="Logo silent"/></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

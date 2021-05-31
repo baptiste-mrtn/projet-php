@@ -1,36 +1,11 @@
 <?php
 
-$products = [
-  "Adidas Rainbow" => [
-    "nom" => "Adidas Rainbow",
-    "prix" => 20000,
-    "poids" => 500,
-    "reduction" => 20,
-    "image" => "img/shoes/paire9.jpg",
-  ],
 
-  "Adidas Blue" => [
-    "nom" => "Adidas Blue",
-    "prix" => 49900,
-    "poids" => 260,
-    "reduction" => 5,
-    "image" => "img/shoes/paire8.jpg",
-  ],
-
-  "Adidas Black & Red" => [
-    "nom" => "Adidas Black & Red",
-    "prix" => 25000,
-    "poids" => 520,
-    "reduction" => 10,
-    "image" => "img/shoes/paire4.jpg",
-  ]
-  ];
-
-  require_once ('my-functions.php');
+include('products.php');
+require_once ('my-functions.php');
 
 ?>
 
-<html>
 
     <h1 class="mb-3">Silent - Tu veux des belles grolles ?</h1>
 
@@ -129,6 +104,7 @@ $products = [
               </select>
               <br>
               <input type="submit" name="commande" value="Ajouter au panier">
+              <input type="hidden" name="article" value="<?php echo $keys[$i]; ?>">
           </form>
       </div>
           <?php
@@ -399,5 +375,3 @@ $products = [
          ?>
     </ul>
 </div> -->
-
-</html>
