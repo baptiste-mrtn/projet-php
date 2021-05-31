@@ -11,12 +11,12 @@
     <!-- Ligne de 12 colonnes -->
     <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3" id="reseaux">
       <!-- 1/3 de la largeur (largeur de 4 colonnes)-->
-      <div class="silent col">
-        <a href="index.php">
+      <div class="silent col-4">
+        <a href="index.php" style="color: white; text-decoration: none;">
           <img src="img/logo silent.jpg" alt="Logo silent"/>SILENT</a>
       </div>
       <!-- 1/3 de la largeur (largeur de 4 colonnes)-->
-      <div class="col">
+      <div class="col-4">
         <div class="reseau">
           <a href="https://www.facebook.com/RickAstley">
             <img src="img/facebook_1.png" alt="Logo facebook"/>
@@ -33,7 +33,7 @@
       </div>
 
       <!-- 1/3 de la largeur (largeur de 4 colonnes)-->
-      <div class="col">
+      <div class="col-4">
         <div class="campus">
           <a href="https://le-campus-numerique.fr/">
             <img src="img/logo_campus_header_1.png" alt="Logo campus numerique" class="logo-campus"/>

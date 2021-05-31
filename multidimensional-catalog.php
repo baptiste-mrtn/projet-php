@@ -2,27 +2,27 @@
 
 $products = [
   "Adidas Rainbow" => [
-    "name" => "Adidas Rainbow",
-    "price" => 20000,
-    "weight" => 500,
-    "discount" => 20,
-    "picture" => "img/shoes/paire9.jpg",
+    "nom" => "Adidas Rainbow",
+    "prix" => 20000,
+    "poids" => 500,
+    "reduction" => 20,
+    "image" => "img/shoes/paire9.jpg",
   ],
 
   "Adidas Blue" => [
-    "name" => "Adidas Blue",
-    "price" => 49900,
-    "weight" => 260,
-    "discount" => 5,
-    "picture" => "img/shoes/paire8.jpg",
+    "nom" => "Adidas Blue",
+    "prix" => 49900,
+    "poids" => 260,
+    "reduction" => 5,
+    "image" => "img/shoes/paire8.jpg",
   ],
 
   "Adidas Black & Red" => [
-    "name" => "Adidas Black & Red",
-    "price" => 25000,
-    "weight" => 520,
-    "discount" => 10,
-    "picture" => "img/shoes/paire4.jpg",
+    "nom" => "Adidas Black & Red",
+    "prix" => 25000,
+    "poids" => 520,
+    "reduction" => 10,
+    "image" => "img/shoes/paire4.jpg",
   ]
   ];
 
@@ -31,20 +31,20 @@ $products = [
 ?>
 
 <html>
-  <body class="bg-dark">
 
-    <h1>Multidimensional Catalog</h1>
+    <h1 class="mb-3">Silent - Tu veux des belles grolles ?</h1>
 
     <div class="boucle-foreach">
-      <h2>Boucle Foreach</h2>
-      <ul class='row col-4 list-group list-group-flush mx-auto mb-4 border bg-white text-center'>
+      <h2 class="mb-4">Catalogue - *psst psst* Achètes achètes...</h2>
+      <ul class='row col-4 list-group list-group-flush mx-auto mb-4 text-center'>
       <?php
           $i = 0;
           $keys = array_keys($products);
 
           foreach($products as $products[$i]){
               $ii = 0;
-              echo "$keys[$i] : <br>";
+              echo "<div style='border: 2px solid red; margin-bottom:50px; background-color: white;'>";
+
               $keys_value = array_keys($products[$keys[$i]]);
               $value = array_values($products[$keys[$i]]);
               $purcent = $value[3];
@@ -52,18 +52,20 @@ $products = [
               foreach ($keys_value as $keys_value[$ii]) {
 
                   if ($ii === 4) {
-                    echo "<li class='list-group-item'>";
-                    echo "$keys_value[$ii] : <img src='$value[$ii]' alt='image baskettes'><br>";
+                    echo "<li class='list-group-item mb-3'>";
+                    echo "<img src='$value[$ii]' alt='image baskettes'><br>";
                     echo "</li>";
                     $ii = $ii +1;
                   }
 
                   else if ($ii === 3) {
+                      $ii = $ii +1;
+                  }
+
+                  else if ($ii === 2) {
                       echo "<li class='list-group-item'>";
-                      echo "$keys_value[$ii] : -$value[$ii]%";
-                      echo " -> ";
-                      formatPrice(displayDiscountedPrice($value[$ii-2], $value[$ii]));
-                      echo " €<br>";
+                      echo "$keys_value[$ii] : ~$value[$ii]";
+                      echo " g<br>";
                       echo "</li>";
                       $ii = $ii +1;
                   }
@@ -71,9 +73,20 @@ $products = [
                   else if ($ii === 1) {
                       echo "<li class='list-group-item'>";
                       echo "$keys_value[$ii] TTC : ";
+                      echo "<span
+                      style='color: red;
+                          text-decoration: line-through;'>";
                       formatPrice($value[$ii]);
-                      echo "€";
-                      echo " | HT : ";
+                      echo "€ </span>";
+                      echo "<span
+                      style='color: green;
+                            text-decoration: none'>";
+                      echo " -";
+                      echo ($value[$ii+2]);
+                      echo "% </span>";
+                      echo "->";
+                      formatPrice(displayDiscountedPrice($value[$ii], $value[$ii+2]));
+                      echo "€ <br> HT : ";
                       formatPrice(priceExcludingVAT($value[$ii]));
                       echo " €<br>";
                       echo "</li>";
@@ -81,20 +94,50 @@ $products = [
                   }
 
                   else {
-                    echo "<li class='list-group-item'>";
-                    echo "$keys_value[$ii] : $value[$ii]<br>";
+                    echo "<li class='list-group-item mt-4'>";
+                    echo "$value[$ii]<br>";
                     echo "</li>";
                     $ii = $ii +1;
               }
 
           }
+          ?>
+          <form class="mb-4" action="cart.php" method="post">
+              <label for="quantite">Quantité</label>
+              <select class="mb-2" name="quantite">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+              </select>
+              <br>
+              <label for="pointure">Pointure</label>
+              <select class="mb-2" name="pointure">
+                  <option value="35">35</option>
+                  <option value="36">36</option>
+                  <option value="37">37</option>
+                  <option value="38">38</option>
+                  <option value="39">39</option>
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                  <option value="42">42</option>
+                  <option value="43">43</option>
+                  <option value="44">44</option>
+                  <option value="45">45</option>
+              </select>
+              <br>
+              <input type="submit" name="commande" value="Ajouter au panier">
+          </form>
+      </div>
+          <?php
+
           $i = $i+1;
           }
           ?>
 
-          <form class="" action="index.html" method="post">
 
-          </form>
       </ul>
     </div>
 
@@ -357,5 +400,4 @@ $products = [
     </ul>
 </div> -->
 
-  </body>
 </html>

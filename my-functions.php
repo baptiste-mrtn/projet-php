@@ -1,6 +1,7 @@
 <?php
 function formatPrice($value){
-    $euros = $value / 100;
+    $euros = round($value) / 100;
+    number_format($value,2);
     echo "$euros";
 }
 
