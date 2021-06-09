@@ -12,7 +12,11 @@ include ('header.php');
       ?>
 
       <?php
-      include ('multidimensional-catalog.php');
+      //include ('multidimensional-catalog.php');
+      ?>
+
+      <?php
+      include ('database.php');
       ?>
 
       <!--FIN DE MON CONTAINER
