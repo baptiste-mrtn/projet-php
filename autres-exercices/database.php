@@ -119,12 +119,12 @@ foreach (allProducts() as $donnees)
 
     <ul class='row col-4 list-group list-group-flush mx-auto mb-4 text-center'>
         <div style='border: 2px solid red; margin-bottom:50px; background-color: white;'>
-            <tr>
+            <tr style='border: 1px solid black;'>
                 <th>Number Order</th>
                 <th>Date</th>
                 <th>Price</th>
             </tr>
-            <tr>
+            <tr style='border: 1px solid black;'>
                 <td>
                     <?= $donnees['number']; ?>
                 </td>
