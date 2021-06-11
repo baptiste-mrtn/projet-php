@@ -20,9 +20,12 @@ include ('header.php');
       ?>
 
       <?php
-      include ('catalogue.php');
-      $baskette1 = new Article("Adidas Rainbow", "baskettes moches", "500", "img/shoes/paire9.jpg", "500", "100", "oui");
-      $baskette1->displayArticle();
+      include('catalogue.php');
+      $catalog = new Catalogue();
+      var_dump($catalog);
+      $catalog->displayCat();
+      //$baskette1 = new Article("Adidas Rainbow", "baskettes moches", "500", "img/shoes/paire9.jpg", "500", "100", "oui");
+      //$baskette1->displayArticle();
       ?>
 
 

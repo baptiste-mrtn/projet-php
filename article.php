@@ -28,7 +28,10 @@
                     <li class='list-group-item'><img alt='' src='<?=$this->image?>'></li>
                     <li class='list-group-item'>Poids: <?=$this->poids?>g</li>
                     <li class='list-group-item'>Stock: <?=$this->stock?></li>
-                    <li class='list-group-item'>Disponible: <?=$this->disponible?></li>
+                    <li class='list-group-item'>Disponible: <?php if($this->disponible == 1){
+                                                                    echo "oui";
+                                                                }else{
+                                                                    echo "non";}?></li>
                 </ul>
             </div>
             <?php
