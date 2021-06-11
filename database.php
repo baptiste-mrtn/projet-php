@@ -10,6 +10,13 @@ function allProducts(){ //fonction qui retourne un tableau avec tous les produit
     $bddActivate = connectDatabase(); //variable correspondant à la connexion à la bdd
     $reponse = $bddActivate->prepare('SELECT * FROM products'); //prépare la requete SQL demandant tout mes produits
     $reponse->execute(); //execute la requête
-return $reponse->fetchAll(); //renvoi la reponse  qui contient toutes les lignes du resultat de ma requête SQL
+return $reponse->fetchAll(); //renvoi la reponse qui contient toutes les lignes du resultat de ma requête SQL
+}
+
+function allCustomers(){
+    $bddActivate = connectDatabase(); //variable correspondant à la connexion à la bdd
+    $reponse = $bddActivate->prepare('SELECT * FROM customers'); //prépare la requete SQL demandant tout mes clients
+    $reponse->execute(); //execute la requête
+return $reponse->fetchAll(); //renvoi la reponse qui contient toutes les lignes du resultat de ma requête SQL
 }
 ?>

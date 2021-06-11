@@ -24,11 +24,30 @@ include ('header.php');
 
       <?php
       include('catalogue.php');
-      $catalog = new Catalogue();
-      $catalog->displayCat();
+      $catalog = new Catalogue();//nouveau objet catalogue
+      $catalog->displayCat();//affiche 
       //$baskette1 = new Article("Adidas Rainbow", "baskettes moches", "500", "img/shoes/paire9.jpg", "500", "100", "oui"); //création de ma variable qui correspond à un objet Article (instance) et lui donne des valeurs en paramètres
       //$baskette1->displayArticle(); //appel de la fonction qui affiche mon article pour ma variable
       ?>
+
+      <h2>Les ien-cli</h2>
+
+      <table class="text-light center mx-auto mb-4" style="border: 2px solid red;">
+      <tr style="border: 1px solid white;">
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th>Code postal</th>
+          <th>Ville</th>
+      </tr><br>
+
+      <?php
+
+      include('clients.php');
+      $ienclis = new listClients();
+      $ienclis->displayListCli();
+
+      ?>
+  </table>
 
 
     <?php

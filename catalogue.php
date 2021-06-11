@@ -1,6 +1,6 @@
 <?php
 
-    include('database.php');
+    require_once('database.php');
     include('article.php');
 
     class Catalogue{
