@@ -19,13 +19,15 @@ include ('header.php');
       //include ('database.php');
       ?>
 
+      <h2>Le Ca-Catalogue !</h2>
+      <p class="text-light text-center">Manges-moi le fruit...</p>
+
       <?php
       include('catalogue.php');
       $catalog = new Catalogue();
-      var_dump($catalog);
       $catalog->displayCat();
-      //$baskette1 = new Article("Adidas Rainbow", "baskettes moches", "500", "img/shoes/paire9.jpg", "500", "100", "oui");
-      //$baskette1->displayArticle();
+      //$baskette1 = new Article("Adidas Rainbow", "baskettes moches", "500", "img/shoes/paire9.jpg", "500", "100", "oui"); //création de ma variable qui correspond à un objet Article (instance) et lui donne des valeurs en paramètres
+      //$baskette1->displayArticle(); //appel de la fonction qui affiche mon article pour ma variable
       ?>
 
 
