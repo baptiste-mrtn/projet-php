@@ -41,7 +41,7 @@
             <li><a class="dropdown-item" href="multidimensional-catalog.php">CATALOGUE</a></li>
             <li><a class="dropdown-item" href="Formulaire_2.html">NOUS CONTACTER</a></li>
             <li><hr class="dropdown-divider"/></li>
-            <li><a class="dropdown-item" href="cart.php"><i class="fas fa-shopping-bag" style="color: black;"></i> TON PANIER FREROT</a></li>
+            <li><a class="dropdown-item" href="panier.php"><i class="fas fa-shopping-bag" style="color: black;"></i> TON PANIER FREROT</a></li>
           </ul>
         </li>
 

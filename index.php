@@ -25,7 +25,7 @@ include ('header.php');
       <?php
       include('catalogue.php');
       $catalog = new Catalogue();//nouveau objet catalogue
-      var_dump($catalog);
+      //var_dump($catalog);
       $catalog->displayCat();//affiche
       //$baskette1 = new Article("Adidas Rainbow", "baskettes moches", "500", "img/shoes/paire9.jpg", "500", "100", "oui"); //création de ma variable qui correspond à un objet Article (instance) et lui donne des valeurs en paramètres
       //$baskette1->displayArticle(); //appel de la fonction qui affiche mon article pour ma variable
