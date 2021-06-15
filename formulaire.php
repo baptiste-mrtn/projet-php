@@ -4,61 +4,32 @@
     require_once("database.php");
     ?>
 
-    <form method="post" action="view.php">
+    <h1>Changement de la BDD</h1>
 
-        <tr>
-            <p><input type="text" name="nameproduct" placeholder="nameproduct"></p>
-            <p><input type="text" name="description" placeholder="description"></p>
-            <p><input type="number" name="price" placeholder="price" min=0></p>
-            <p><input type="text" name="image" placeholder="image"> </p>
-            <p><input type="number" name="weight" placeholder="weight"></p>
-            <p><input type="number" name="quantity" placeholder="quantity"></p>
-            <p><input type="number" name="available" placeholder="available"></p>
-            <p><input type="number" name="category_id" placeholder="category"></p>
+    <h2 class="mb-4">Ajout d'un produit</h2>
 
-        </tr>
+    <form class="mx-auto mb-4" method="post" action="view.php">
+            <input type="text" name="name" placeholder="Nom du produit"></input>
+            <input type="text" name="description" placeholder="Description"></input>
+            <input type="number" name="price" placeholder="Prix (centimes)" min=0></input>
+            <input type="text" name="picture" placeholder="URL de l'image"></input>
+            <input type="number" name="weight" placeholder="Poids (g)"></input>
+            <input type="number" name="quantity" placeholder="Quantité"></input>
+            <label class="text-light" for="available">Disponible:</label>
+            <select type="number" name="available">
+                <option value="0">Non</option>
+                <option value="1">Oui</option>
+            </select>
+            <label class="text-light" for="category_id">Catégorie:</label>
+            <select type="number" name="category_id" placeholder="Categorie">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select><br>
+            <button type="submit" name="ajouter" id="ajouter" value="ajouter">Envoyer</button>
     </form>
-
-
-
-    <?php
-    include("footer.php");
-    addOneProduct($_POST['nameproduct'], $_POST['description'], $_POST['price'], $_POST['image'], $_POST['weight'], $_POST['quantity'], $_POST['available'], $_POST['category_id'],$_POST['level'],$_POST['size'],$_POST['brand']);
-
-    ?>
-
-    <li><?php echo $_POST['nameproduct'] ?> </li>
-    <li><?php echo $_POST['description'] ?> </li>
-    <li><?php echo $_POST['price'] ?> </li>
-    <li><?php echo $_POST['image'] ?> </li>
-    <li><?php echo $_POST['weight'] ?> </li>
-    <li><?php echo $_POST['quantity'] ?> </li>
-    <li><?php echo $_POST['available'] ?> </li>
-    <li><?php echo $_POST['category_id'] ?> </li>
-    <li><?php echo $_POST['level'] ?> </li>
-    <li><?php echo $_POST['size'] ?> </li>
-    <li><?php echo $_POST['brand'] ?> </li>
 
 <?php
 
-//Fonction qui m'affiche l'ajout d'un article
-
-function addOneProduct($name,$description,$price,$image,$weight,$quantity,$available,$category_id) {
-    $bdd = accessbdd();
-    $query_add = $bdd->prepare('INSERT INTO products (name, description, price, image, weight, quantity, available, category_id)
-    VALUE (:name, :description, :price, :image, :weight, :quantity, :available, :category_id)');
-    $query_add->execute(array(
-        'name' => $name,
-        'description' => $description,
-        'price' => $price,
-        'image' => $image,
-        'weight' => $weight,
-        'quantity' => $quantity,
-        'available' => $available,
-        'category_id' => $category_id,
-    ));
-
-    echo "Le produit a bien été ajouté";
-
-};
+include("footer.php");
 ?>

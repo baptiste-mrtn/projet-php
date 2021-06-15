@@ -36,9 +36,9 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="index.html#features">FEATURES</a></li>
             <li><a class="dropdown-item" href="index.html#partenaires">PARTENAIRES</a></li>
-            <li><a class="dropdown-item" href="index.html#succes">SUCCES</a></li>
+            <li><a class="dropdown-item" href="formulaire.php">FORMULAIRE AJOUT PROD</a></li>
             <li><a class="dropdown-item" href="Team-BS.html">TEAM</a></li>
-            <li><a class="dropdown-item" href="multidimensional-catalog.php">CATALOGUE</a></li>
+            <li><a class="dropdown-item" href="index.php">CATALOGUE</a></li>
             <li><a class="dropdown-item" href="Formulaire_2.html">NOUS CONTACTER</a></li>
             <li><hr class="dropdown-divider"/></li>
             <li><a class="dropdown-item" href="panier.php"><i class="fas fa-shopping-bag" style="color: black;"></i> TON PANIER FREROT</a></li>
@@ -51,7 +51,7 @@
       </ul>
 
       <form class="d-flex">
-          <a href="cart.php"><i class="fas fa-shopping-bag" style="color: white; font-size: 30px;margin-right : 50px;"></i></a>
+          <a href="panier.php"><i class="fas fa-shopping-bag" style="color: white; font-size: 30px;margin-right : 50px;"></i></a>
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
