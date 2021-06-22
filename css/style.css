@@ -1,7 +1,7 @@
 body{
     background: rgb(34, 33, 33);
 
-  
+
 }
 
 body {
@@ -10,6 +10,17 @@ body {
   height: 100%;
   padding: 0;
 }
+
+.bonjour .cases .case{
+    background: rgba(0,0,0,0.3);
+    color: white;
+    padding: 2rem;
+    width: 33%;
+    margin: 2rem;
+    float: right;
+    font-size: 1.2rem;
+}
+
 
 /*CECI EST LE DEBUT CSS DU BANDEAU*/
 
@@ -38,7 +49,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  
+
 }
 
 
@@ -50,14 +61,14 @@ h1{
     font-family: 'Montserrat', sans-serif;
     color: rgb(240, 10, 10);
 
-    
+
 
 }
 
 h2{
     text-align: center;
     font-size: 60px;
-    
+
     color: rgb(233, 2, 2);
     font-family: 'Roboto', sans-serif;
 
@@ -88,14 +99,14 @@ h5{
     flex-basis: 100%;
     font-family: 'Montserrat', sans-serif;
     color: rgb(240, 14, 14);
-    
+
 
 }
 .w1-container{
-    
+
     text-align: center;
     color: rgb(228, 10, 10);
-    
+
 }
 
 .w2-container{
@@ -105,15 +116,15 @@ h5{
     max-width: 700px;
     margin: auto;
 
-    
-        
-      
+
+
+
 
 }
 
 .w5-container{
     text-align: center;
-    
+
 }
 
 .w3-container{
@@ -131,13 +142,13 @@ h5{
     max-width: 700px;
     margin: auto;
     color: rgb(235, 16, 16);
-    
+
 
 }
 
 .w6-container div{
     text-align: center;
-    
+
     background-color:rgba(0, 0, 0, 1);
 	width:536px;
 	height:200px;
@@ -145,29 +156,29 @@ h5{
 	border-top-right-radius:30px;
 	border-bottom-left-radius:30px;
 	border-bottom-right-radius:30px;
-    
-    
-    
-    
-    
+
+
+
+
+
 }
 
 .image1{
     position: relative;
-    
+
     right: 17%;
     margin-top: 2%;
-    
+
 }
 
 .w2-container{
     display: flex;
-    
+
 
 }
 
 .w2-container div{
-    
+
     padding: 10px;
     width: 300px;
     height: 140px;
@@ -193,27 +204,27 @@ h5{
     height: 90px;
     background-color: rgb(248, 4, 4);
     border-radius: 10%;
-    
+
 
 }
 
 .align_right{
     text-align: right;
-    
+
 }
 
 .coucou{
     width: 20px;
     height: 20px;
-    
+
 }
 
 .walah{
     text-align: left;
-    color: white; 
+    color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
-    
+
 }
 
 .bogoss{
@@ -309,9 +320,9 @@ footer .row {
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  
+
   .main-nav div:not(:first-child) {
-    
+
     display: flex;
     width: 150px;
     line-height: 80px;
@@ -329,13 +340,13 @@ footer .row {
     background: url(photo/boutonnoir2.png) no-repeat;
     background-position-y: center;
   }
-  
+
   span {
     color: white;
     text-align: center;
     text-decoration:underline black;
   }
-  
+
   /*CECI EST LA FIN DU CSS DU BANDEAU*/
 
   /*Début CSS pour la page team*/
@@ -346,18 +357,18 @@ body {
     background: rgb(255, 255, 255);
     margin: 0%;
   }
-  
+
   @media (max-width: 600px) {
     body {
       background: pink;
       font-size: 15px;
     }
   }
-  
+
   /*fin test media qwery sur body*/
-  
+
   /*début test media qwery sur container*/
-  
+
   .container-t {
     display: flex;
     flex-direction: row;
@@ -367,16 +378,16 @@ body {
     background-color: rgb(34, 33, 33);
     font-size: 20px;
   }
-  
+
   @media (max-width: 600px) {
     .container-t {
       background: pink;
       font-size: 2px;
     }
   }
-  
+
   /*fin test media qwery sur container*/
-  
+
   .container-t div {
     padding: 30px 20px 30px 20px;
     margin-top: -10px;
@@ -385,7 +396,7 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   .presentation {
     background: #3d3b3b;
     border-radius: 10%;
@@ -393,37 +404,37 @@ body {
     font-size: 15px;
     border-left: red solid 4px;
   }
-  
+
   @media (max-width: 800px) {
       .presentation {
         font-size: 12px;
       }
     }
-  
+
   .nom {
     font-size: 30px;
     color: white;
     font-weight: bolder;
     text-decoration: underline;
   }
-  
+
   .nom:hover {
     filter: drop-shadow(5px 5px 3px rgb(255, 0, 0));
   }
-  
+
   @media (max-width: 600px) {
       .nom {
         font-size: 20px;
       }
     }
-  
+
   .metier {
     color: white;
     font-style: italic;
     text-decoration: underline rgb(34, 33, 33);
     font-size: 20px;
   }
-  
+
   @media (max-width: 600px) {
       .metier {
         font-size: 15px;
@@ -435,11 +446,11 @@ body {
     text-decoration: underline rgb(34, 33, 33);
     font-size: 15px;
   }
-  
+
   .infos {
     text-align: center;
   }
-  
+
   img.displayed-p {
     display: block;
     margin-left: -10px;
@@ -449,25 +460,25 @@ body {
     height: 200px;
     width: 200px
   }
-  
+
   @media (max-width: 600px) {
       .img.displayed-p {
           height: 50px;
           width: 50px;
       }
     }
-  
+
   img.displayed-p:hover {
     display: block;
     margin-left: -10px;
     margin-right: auto;
     filter: drop-shadow(10px 10px 15px rgb(255, 0, 0));
   }
-  
-  
-  
+
+
+
   /*Fin CSS pour la page team*/
-  
+
   /*CECI EST LE CSS DU BANDEAU*/
   .main-nav {
       display: flex;
@@ -475,9 +486,9 @@ body {
       justify-content: space-around;
       flex-wrap: wrap;
     }
-    
+
     .main-nav div:not(:first-child) {
-      
+
       display: flex;
       width: 150px;
       line-height: 80px;
@@ -495,20 +506,20 @@ body {
       background: url(photo/boutonnoir2.png) no-repeat;
       background-position-y: center;
     }
-    
+
     span {
       color: white;
       text-align: center;
       text-decoration:underline black;
     }
-  
+
   /*CECI EST LA FIN DU CSS DU BANDEAU*/
-  
- 
+
+
 
     .rawer{
       text-align: center;
-      
+
     }
 
     .catak{
@@ -518,7 +529,7 @@ body {
 
     h40{
       color: rgb(0, 0, 0);
-    
+
     text-decoration: underline rgb(34, 33, 33);
     font-size: 60px;
     }
@@ -527,7 +538,7 @@ body {
     h6{
       text-align: center;
       text-decoration:underline black;
-      
+
 
       }
 
@@ -542,30 +553,30 @@ body {
         border-collapse: collapse;
         border: 2px solid rgb(0, 0, 0);
         text-align: center;
-        
-        
+
+
       }
-      
+
       thead th:nth-child(1) {
         width: 30%;
       }
-      
+
       thead th:nth-child(2) {
         width: 20%;
       }
-      
+
       thead th:nth-child(3) {
         width: 15%;
       }
-      
+
       thead th:nth-child(4) {
         width: 35%;
       }
-      
+
       th, td {
         padding: 20px;
       }
-      
+
       .paragraphe_centre {
         text-align: left;
         margin-left: 10%;
@@ -639,8 +650,8 @@ footer .row {
     background-color: #384047;
 
 }
-   
-    
+
+
   /*fin css footer*/
 
   .paragraphe_centre {
@@ -664,21 +675,21 @@ footer .row {
   border-radius: 100%;
   height: 200px;
   width: 200px;
-  
+
 }
 #coucoubogosse2{
   justify-content: center;
   border-radius: 100%;
   height: 200px;
   width: 200px;
-  
+
 }
 #coucoubogosse1{
   justify-content: center;
   border-radius: 100%;
   height: 200px;
   width: 200px;
-  
+
 }
 
 h2{
@@ -704,8 +715,8 @@ body{
   #nikel,
   #adadas,
   #offw{
-  
- 
+
+
     font-size: large;
 
 
@@ -721,5 +732,5 @@ font-size: 80px;
 #piraterie{
 
   color: red;
- 
+
 }

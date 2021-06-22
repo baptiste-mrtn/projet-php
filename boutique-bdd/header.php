@@ -46,7 +46,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" >Disabled</a>
+          <a class="nav-link" href="../../../index.php" tabindex="-1" aria-disabled="true" ><i class="fas fa-dice-d20" style="font-size: 35px;"></i></a>
         </li>
       </ul>
 
