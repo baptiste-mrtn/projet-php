@@ -1,6 +1,6 @@
 <?php
 function connectDatabase(){ //fonction qui connecte la BDD
-try{$bdd = new PDO('mysql:host=localhost;dbname=dump;charset=utf8', 'baptiste_martin', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));} //code qui permet de se connecter à la bdd
+try{$bdd = new PDO('mysql:host=localhost;dbname=test;charset=utf8', 'baptiste_martin', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));} //code qui permet de se connecter à la bdd
 catch (Exception $e){die('Erreur : ' . $e->getMessage());} //si il y'a erreur, affiche un message
 return $bdd; //renvoi la bdd
 }
@@ -19,4 +19,3 @@ function allCustomers(){
     $reponse->execute(); //execute la requête
 return $reponse->fetchAll(); //renvoi la reponse qui contient toutes les lignes du resultat de ma requête SQL
 }
-?>

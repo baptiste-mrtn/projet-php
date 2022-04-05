@@ -4,12 +4,14 @@ include('header.php');
 ?>
 
 <section class="bonjour">
-    <div class="cases">
-        <div class="case">
-            Projet Boutique
-        </div>
-        <div class="case">
-            Projet
+    <div class="container">
+        <div class="cases">
+            <div class="case">
+                <a href="./boutique-bdd/index.php">Projet Boutique</a>
+            </div>
+            <div class="case">
+                <a href="./catalogs/index.php">Projet Catalogue</a>
+            </div>
         </div>
     </div>
 </section>
@@ -17,4 +19,4 @@ include('header.php');
 <?php
 
 include('footer.php');
- ?>
+?>

@@ -30,11 +30,12 @@
 
             <div class="collapse navbar-collapse col-4" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item text-center"><a class="nav-link active" aria-current="page"
-                            href="index.php">Home</a></li>
-                    <li class="nav-item text-center"><a class="nav-link" href="./boutique-bdd/index.php">Boutique</a>
+                    <li class="nav-item text-center"><a class="nav-link" aria-current="page"
+                            href="../index.php">Home</a>
                     </li>
-                    <li class="nav-item text-center"><a class="nav-link" href="./catalogs/index.php">Catalogue</a></li>
+                    <li class="nav-item text-center"><a class="nav-link" href="../boutique-bdd/index.php">Boutique</a>
+                    </li>
+                    <li class="nav-item text-center"><a class="nav-link active" href="./index.php">Catalogue</a></li>
                 </ul>
 
                 <div class="text-center col-4 logo">

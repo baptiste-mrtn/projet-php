@@ -1,0 +1,13 @@
+body {
+  background: rgb(34, 33, 33);
+}
+
+.logo img {
+  width: 10%;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
